@@ -1,4 +1,9 @@
-a, b = 'ząb', 'zupa'
-c, d = 69, 420
-print(a+b)
-print(c+d)
+a,b = 'ząb', 'zupa'
+c = 69.9
+d = 420
+print(a)
+print(b)
+print("Suma stringow:",a+b)
+print(c)
+print(d)
+print("Suma liczb typu int i float:",c+d)
