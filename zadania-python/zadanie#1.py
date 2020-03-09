@@ -1,2 +1,4 @@
-imie = input("Witaj. Jak masz na imie?")
-print("Miło cię poznać "+imie)
+a, b = 'ząb', 'zupa'
+c, d = 69, 420
+print(a+b)
+print(c+d)
