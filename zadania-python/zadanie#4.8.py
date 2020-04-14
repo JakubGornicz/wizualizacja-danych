@@ -26,4 +26,3 @@ robal.idz_w_prawo(1)
 robal.pokaz_gdzie_jestes( )
 
 del robal
-robal.pokaz_gdzie_jestes( )
