@@ -3,7 +3,7 @@ class Ksztalty:
     def __init__(self, x, y):
         # deklarujemy atrybuty
         # self wskazuje że chodzi o zmienne właśnie definiowanej klasy
-        self.x=x
+        self.x=x 
         self.y=y
         self.opis = "To będzie klasa dla ogólnych kształtów"
 
@@ -19,18 +19,32 @@ class Ksztalty:
     def skalowanie(self, czynnik):
         self.x = self.x * czynnik
         self.x = self.y * czynnik
-
+        
 class Kwadrat(Ksztalty):
 
     def __init__(self, x):
         self.x = x
         self.y = x
-    def __add__(self, other):
-        return Kwadrat(self.x + other.x)
 
-k1 = Kwadrat(4)
-k2 = Kwadrat(16)
-print(k1.x)
-print(k2.x)
-k3 = k1 + k2
-print(k3.x)
+    def __ge__(self, other): #a, b a >= b
+             return self.x >= other.x  
+    def __gt__(self, other): #a, b a > b
+            return self.x > other.x
+    def __lt__(self, other): #a, b a < b
+            return  self.x < other.x
+    def __le__(self, other): #a, b a <= b
+            return self.x <= other.x  
+
+kw1 = Kwadrat(5)
+kw2 = Kwadrat(7)
+
+print("Czy wiekszy/rowny: ",kw1>=kw2)
+
+print("Czy wiekszy: ",kw1>kw2)
+
+print("Czy mniejszy: ",kw1<kw2)
+
+print("Czy mniejszy/rowny: ",kw1<=kw2)
+
+
+
